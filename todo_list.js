@@ -41,9 +41,9 @@ function dateAndTimeToTimestamp(dateInputElement, timeInputElement) {
 }
 /* Part4 */
 document.querySelector('#task_description_input').addEventListener('keydown', function (e) {
-    var desc = document.querySelector('#task_description_input').value;/* 文字描述信息 */
-    var date = document.querySelector('#duedate_input');/* 日期 */
-    var time = document.querySelector('#duetime_input');/* 时间 */
+    var desc = document.querySelector('#task_description_input').value;
+    var date = document.querySelector('#duedate_input');
+    var time = document.querySelector('#duetime_input');
     console.log(e.which)
     if (e.which == 13) {
         addTask(desc, dateAndTimeToTimestamp(date, time))
@@ -57,9 +57,9 @@ function done(e) {
 }
 /* add task */
 function addtask() {
-    var desc = document.querySelector('#task_description_input').value;/* 文字描述信息 */
-    var date = document.querySelector('#duedate_input');/* 日期 */
-    var time = document.querySelector('#duetime_input');/* 时间 */
+    var desc = document.querySelector('#task_description_input').value;
+    var date = document.querySelector('#duedate_input');
+    var time = document.querySelector('#duetime_input');
     addTask(desc, dateAndTimeToTimestamp(date, time))
     /* Part 5: Clearing the task description input element */
     document.querySelector('#task_description_input').value = '';
